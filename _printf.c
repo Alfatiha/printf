@@ -5,7 +5,7 @@
   *
   *@format: format specifiers
   *
-  *Return: the number of characters printed
+  *Return: characters printed
   */
 
 /**
