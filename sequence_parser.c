@@ -1,6 +1,6 @@
+#include "main.h"
 /**
- * parser - Receives the main string and all the necessary parameters to
- * print a formated string.
+ * sequence_parser - Receives the main string and all the necessary parameters
  * @format: A string containing all the desired characters.
  * @spec_list: A list of all the posible functions.
  * @args: A list containing all the argumentents passed to the program.
@@ -15,7 +15,6 @@ int sequence_parser(const char *format, f_specifiers spec_list[], va_list args)
 	{
 		if (format[i] == '%') /*Checks for format specifiers*/
 		{
-			/*Iterates through struct to find the right func*/
 			for (j = 0; spec_list[j].sym != NULL; j++)
 			{
 				if (format[i + 1] == spec_list[j].sym[0])
@@ -48,3 +47,4 @@ int sequence_parser(const char *format, f_specifiers spec_list[], va_list args)
 	}
 	return (printed_chars);
 }
+
