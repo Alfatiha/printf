@@ -6,7 +6,7 @@
  *
  * Return: On success 1.
  */
-int print_string(va_lidt s)
+int print_string(va_list s)
 {
 	char *print_string;
 	int  i = 0;
