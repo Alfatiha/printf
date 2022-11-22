@@ -11,13 +11,7 @@
 int _printf(const char *format, ...)
 {
 	int num_of_char;
-
-	va_list args; /*list of arguments*/
-
-	/*format is the end of the list*/
-	va_start(args, format);
-
-	va_end(args);
+	typedef struct convert f_specifiers;
 
 	/*lets use a struct called f_specifiers*/
 
@@ -25,15 +19,17 @@ int _printf(const char *format, ...)
 	{"%", print_percent},
 	{"c", print_char},
 	{"s", print_string},
-	{"d", print_integer},
-	{"i", print_integer},
 	};
+	va_list args; /*list of arguments*/
+
+        /*format is the end of the list*/
+        va_start(args, format);
 
 	if (format == NULL)
 		return (-1);
 
 	/*Here we call parser function*/
-	num_of_char = parser(format, spec_list, args);
-
+	num_of_char = sequence_parser(format, spec_list, args);
 	return (num_of_char);
+	va_end(args);
 }

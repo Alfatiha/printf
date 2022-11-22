@@ -2,12 +2,12 @@
 
 /**
  * print_char - writes the character c to stdout
- * @c: The character to print
+ * @list: list of arguments
  *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * Return: amount of characters
  */
-int print_char(char c)
+int print_char(va_list list)
 {
-	return (write(1, &c, 1));
+	_putchar(va_arg(list, int));
+	return (1);
 }
