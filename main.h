@@ -19,7 +19,6 @@ struct convert
 };
 
 typedef struct convert f_specifiers;
-
 /*Our Fuctions*/
 int _putchar(char);
 int sequence_parser(const char *format,

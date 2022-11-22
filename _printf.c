@@ -24,7 +24,8 @@ int _printf(const char *format, ...)
 	{"u", print_unsigned_integer},
 	{"o", print_octal},
 	{"x", print_hex},
-	{"X", print_heX}
+	{"X", print_heX},
+	{NULL, NULL}
 	};
 	va_list args; /*list of arguments*/
 
@@ -36,6 +37,6 @@ int _printf(const char *format, ...)
 
 	/*Here we call parser function*/
 	num_of_char = sequence_parser(format, spec_list, args);
-	return (num_of_char);
 	va_end(args);
+	return (num_of_char);
 }
