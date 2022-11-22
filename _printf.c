@@ -11,7 +11,6 @@
 int _printf(const char *format, ...)
 {
 	int num_of_char;
-	typedef struct convert f_specifiers;
 
 	/*lets use a struct called f_specifiers*/
 
@@ -22,8 +21,8 @@ int _printf(const char *format, ...)
 	};
 	va_list args; /*list of arguments*/
 
-        /*format is the end of the list*/
-        va_start(args, format);
+	/*format is the end of the list*/
+	va_start(args, format);
 
 	if (format == NULL)
 		return (-1);

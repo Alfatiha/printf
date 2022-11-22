@@ -12,7 +12,6 @@
  * @sym: operator
  * @f: function pointer
 */
-
 struct convert
 {
 	char *sym;
@@ -20,10 +19,10 @@ struct convert
 };
 
 typedef struct convert f_specifiers;
-
 /*Our Fuctions*/
 int _putchar(char);
-int sequence_parser(const char *format, f_specifiers spec_list[], va_list args);
+int sequence_parser(const char *format,
+f_specifiers spec_list[], va_list args);
 int _printf(const char *format, ...);
 int print_char(va_list);
 int print_string(va_list);
