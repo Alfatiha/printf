@@ -19,6 +19,7 @@ struct convert
 };
 
 typedef struct convert f_specifiers;
+
 /*Our Fuctions*/
 int _putchar(char);
 int sequence_parser(const char *format,
@@ -27,6 +28,7 @@ int _printf(const char *format, ...);
 int print_char(va_list);
 int print_string(va_list);
 int print_percent(va_list);
+int number(va_list args);
 int print_integer(va_list);
-int print_number(va_list);
+print_unsigned_integer(va_list list);
 #endif

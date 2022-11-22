@@ -20,6 +20,7 @@ int _printf(const char *format, ...)
 	{"s", print_string},
 	{"d", print_integer},
 	{"i", print_integer},
+	{"u", print_unsigned_integer}
 	};
 	va_list args; /*list of arguments*/
 
