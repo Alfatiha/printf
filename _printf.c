@@ -8,26 +8,29 @@
   *Return: the number of characters printed
   */
 
-/**
-  *vprintk - print a char
-  *
-  *@args: a list of argument pointing to the
-  *	character to be printed
-  *
-  *Return: Always 0 success
-  */
-
-void vprintk(const char *format, va_list args) {}
-
 int _printf(const char *format, ...)
 {
+	int num_of_char;
+
 	va_list args; /*list of arguments*/
 
 	/*format is the end of the list*/
 	va_start(args, format);
 
-	/*extract arguments*/
-	vprintk(format, args);
-
 	va_end(args);
+
+	/*lets use a struct called f_specifiers*/
+
+	f_specifiers spec_list[] = {
+	{"c", print_char},
+	{"s", print_string}
+	};
+
+	if (format == NULL)
+		return (-1);
+
+	/*Here we call parser function*/
+	num_of_char = parser(format, spec_list, args);
+
+	return (num_of_char);
 }
