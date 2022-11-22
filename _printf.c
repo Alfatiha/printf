@@ -16,11 +16,11 @@
   *
   *Return: Always 0 success
   */
-
 void vprintk(const char *format, va_list args) {}
 
 int _printf(const char *format, ...)
 {
+	int characters_printed;
 	va_list args; /*list of arguments*/
 
 	/*format is the end of the list*/
@@ -31,3 +31,4 @@ int _printf(const char *format, ...)
 
 	va_end(args);
 }
+return (characters_printed);
