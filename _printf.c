@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdarg.h>
 
 /**
   *_printf - our replica of the built in printf fuction
@@ -10,7 +9,7 @@
   */
 
 /**
-  *vprintk- print a char
+  *vprintk - print a char
   *
   *@args: a list of argument pointing to the
   *	character to be printed
