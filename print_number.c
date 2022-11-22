@@ -5,7 +5,7 @@
  * @args: List of arguments
  * Return: The number of arguments printed
  */
-int number(va_list args)
+int print_number(va_list args)
 {
 	int n;
 	int div;
@@ -46,6 +46,6 @@ int print_integer(va_list list)
 {
 	int num_length;
 
-	num_length = number(list);
+	num_length = print_number(list);
 	return (num_length);
 }

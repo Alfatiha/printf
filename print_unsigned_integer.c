@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * unsigned_number - Prints an unsigned number
+ * print_unsigned_number - Prints an unsigned number
  * @n: unsigned integer to be printed
  * Return: The length of numbers printed
  */
-int unsigned_number(unsigned int n)
+int print_unsigned_number(unsigned int n)
 {
 	int div;
 	int num_len;
@@ -34,16 +34,16 @@ int unsigned_number(unsigned int n)
  * @list: List of all of the argumets
  * Return: the unsigned numbers
  */
-int print_unsigned_integer(va_list list)
+int unsigned_integer(va_list list)
 {
 	unsigned int num;
 
 	num = va_arg(list, unsigned int);
 
 	if (num == 0)
-		return (unsigned_number(num));
+		return (print_unsigned_number(num));
 
 	if (num < 1)
 		return (-1);
-	return (unsigned_number(num));
+	return (print_unsigned_number(num));
 }
