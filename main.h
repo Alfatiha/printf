@@ -31,4 +31,5 @@ int print_percent(va_list);
 int number(va_list args);
 int print_integer(va_list);
 print_unsigned_integer(va_list list);
+int print_binary(va_list list);
 #endif
