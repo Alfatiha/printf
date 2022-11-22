@@ -21,6 +21,10 @@ struct convert
 typedef struct convert f_specifiers;
 
 /*Our Fuctions*/
+int _putchar(char);
 int _printf(const char *format, ...);
-
+int print_char(va_list);
+int print_string(va_list);
+int print_percent(va_list);
+int print_integer(va_list);
 #endif

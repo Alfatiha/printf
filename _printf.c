@@ -22,8 +22,11 @@ int _printf(const char *format, ...)
 	/*lets use a struct called f_specifiers*/
 
 	f_specifiers spec_list[] = {
+	{"%", print_percent},
 	{"c", print_char},
-	{"s", print_string}
+	{"s", print_string},
+	{"d", print_integer},
+	{"i", print_integer},
 	};
 
 	if (format == NULL)
