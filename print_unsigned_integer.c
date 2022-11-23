@@ -30,7 +30,7 @@ int print_unsigned_number(unsigned int n)
 }
 
 /**
- * print_unsigned_integer - Prints Unsigned integers
+ * unsigned_integer - Prints Unsigned integers
  * @list: List of all of the argumets
  * Return: the unsigned numbers
  */

@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * number - is a number signed or not
+ * print_number - is a number signed or not
  * @args: List of arguments
  * Return: The number of arguments printed
  */
