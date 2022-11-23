@@ -22,6 +22,7 @@ int _printf(const char *format, ...)
 	{"i", print_integer},
 	{"b", print_binary},
 	{"r", print_reversed},
+	{"R", print_rot13},
 	{"u", unsigned_integer},
 	{"o", print_octal},
 	{"x", print_hex},
