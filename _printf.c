@@ -21,6 +21,7 @@ int _printf(const char *format, ...)
 	{"d", print_integer},
 	{"i", print_integer},
 	{"b", print_binary},
+	{"r", print_reversed},
 	{"u", unsigned_integer},
 	{"o", print_octal},
 	{"x", print_hex},
