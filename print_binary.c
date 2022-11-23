@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_binary - Converts a number from base 10 to binary
+ * print_binary - Converts number from base 10 to binary
  * @list: List of arguments passed to this function
  * Return: The length of the number printed
  */
