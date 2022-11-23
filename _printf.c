@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-  *_printf - our replica of the built in printf fuction
+  *_printf - our replica of built in printf fuction
   *
   *@format: format specifiers
   *
